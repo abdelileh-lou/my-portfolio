@@ -30,7 +30,7 @@ const Profile = () => {
             Abdelileh Louhichi
           </h1>
           <p className="text-xl lg:text-2xl text-blue-600 font-semibold !mt-5">
-            Frontend Developer
+            Full Stack Developer
           </p>
         </div>
 
@@ -40,8 +40,8 @@ const Profile = () => {
             className="flex items-center justify-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-full font-semibold transition-all duration-300 hover:bg-gray-700 hover:shadow-lg transform hover:-translate-y-1 min-w-[160px]"
             onClick={() => {
               const link = document.createElement("a");
-              link.href = "/resume-example.pdf";
-              link.download = "Abdelileh-Louhichi-CV.pdf";
+              link.href = "../src/assets/cv.pdf";
+              link.download = "cv.pdf";
               link.click();
             }}
           >
@@ -66,7 +66,7 @@ const Profile = () => {
             className="p-3 bg-white rounded-full shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl hover:bg-blue-600 hover:text-white transform hover:-translate-y-1 group"
             onClick={() =>
               window.open(
-                "https://linkedin.com/in/abdelileh-louhichi",
+                "https://www.linkedin.com/in/abdelileh-louhichi-4a0b7431a/",
                 "_blank"
               )
             }
@@ -77,7 +77,7 @@ const Profile = () => {
           <button
             className="p-3 bg-white rounded-full shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl hover:bg-gray-900 hover:text-white transform hover:-translate-y-1 group"
             onClick={() =>
-              window.open("https://github.com/abdelileh-louhichi", "_blank")
+              window.open("https://github.com/abdelileh-lou", "_blank")
             }
             aria-label="GitHub Profile"
           >

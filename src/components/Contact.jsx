@@ -18,10 +18,10 @@ const Contact = () => {
             <Mail className="h-6 w-6 text-gray-700" />
           </div>
           <a
-            href="mailto:example@gmail.com"
+            href="mailto:abdelilehlouhichi@gmail.com"
             className="text-lg text-gray-800 hover:text-blue-600 transition-colors"
           >
-            Example@gmail.com
+            abdelilehlouhichi@gmail.com
           </a>
         </div>
 
@@ -30,7 +30,7 @@ const Contact = () => {
             <Linkedin className="h-6 w-6 text-gray-700" />
           </div>
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/abdelileh-louhichi-4a0b7431a/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-lg text-gray-800 hover:text-blue-600 transition-colors"
