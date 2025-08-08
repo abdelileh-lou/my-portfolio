@@ -1,52 +1,3 @@
-// import { Link } from "react-router-dom";
-// import React from "react";
-
-// const Navbar = () => {
-//   return (
-//     <nav className="hidden lg:flex justify-around items-center h-[17vh]">
-//       <div className="text-3xl hover:cursor-default">Abdelileh Louhichi</div>
-//       <div>
-//         <ul className="flex gap-8 text-xl">
-//           <li>
-//             <a
-//               href="#about"
-//               className="text-black hover:text-gray-500 hover:underline hover:underline-offset-4 hover:decoration-gray-300"
-//             >
-//               About
-//             </a>
-//           </li>
-//           <li>
-//             <a
-//               href="#experience"
-//               className="text-black hover:text-gray-500 hover:underline hover:underline-offset-4 hover:decoration-gray-300"
-//             >
-//               Experience
-//             </a>
-//           </li>
-//           <li>
-//             <a
-//               href="#projects"
-//               className="text-black hover:text-gray-500 hover:underline hover:underline-offset-4 hover:decoration-gray-300"
-//             >
-//               Projects
-//             </a>
-//           </li>
-//           <li>
-//             <a
-//               href="#contact"
-//               className="text-black hover:text-gray-500 hover:underline hover:underline-offset-4 hover:decoration-gray-300"
-//             >
-//               Contact
-//             </a>
-//           </li>
-//         </ul>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -72,61 +23,91 @@ const Navbar = ({ scrollToSection }) => {
   }, []);
 
   const navItems = [
-    { id: "about", label: "About" },
-    { id: "experience", label: "Services" },
-    { id: "projects", label: "Projects" },
-    { id: "contact", label: "Let's Talk" },
+    { id: "about", label: "about" },
+    { id: "experience", label: "services" },
+    { id: "projects", label: "projects" },
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-stone-100/95 backdrop-blur-sm">
+    <nav className="fixed top-0 w-full z-50 bg-gray-50/95 backdrop-blur-md border-b border-gray-100/50 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex justify-between items-center py-6">
-          <div className="font-bold text-2xl text-gray-900 italic">
-            Abdelileh°
+        <div className="flex justify-between items-center py-4">
+          {/* Brand Logo */}
+          <div className="font-bold text-xl text-gray-900">
+            Abdelileh<span className="text-gray-600">*</span>
           </div>
 
-          <div className="hidden md:flex items-center space-x-12">
+          {/* Center Navigation Dot */}
+          <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
+            <div className="w-2 h-2 bg-gray-900 rounded-full"></div>
+          </div>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`transition-colors duration-200 hover:text-gray-600 text-lg ${
-                  activeSection === item.id
-                    ? "text-gray-900 font-medium"
-                    : "text-gray-700"
+                className={`transition-all duration-300 hover:text-gray-900 text-sm font-medium ${
+                  activeSection === item.id ? "text-gray-900" : "text-gray-600"
                 }`}
               >
                 {item.label}
               </button>
             ))}
+
+            {/* Let's Talk Button */}
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-all duration-300 hover:shadow-lg hover:scale-105"
+            >
+              Let's Talk.
+            </button>
           </div>
 
+          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg text-gray-700 hover:text-gray-900"
+              className="p-2 rounded-lg text-gray-700 hover:text-gray-900 transition-colors duration-200"
             >
-              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
           </div>
         </div>
 
+        {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200">
-            {navItems.map((item) => (
+          <div className="md:hidden py-4 border-t border-gray-200/50">
+            <div className="space-y-2">
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => {
+                    scrollToSection(item.id);
+                    setMobileMenuOpen(false);
+                  }}
+                  className={`block w-full text-left py-3 px-4 rounded-lg transition-all duration-200 text-sm ${
+                    activeSection === item.id
+                      ? "text-gray-900 font-medium bg-gray-100"
+                      : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
+
+              {/* Mobile Let's Talk Button */}
               <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`block w-full text-left py-3 px-4 rounded-lg ${
-                  activeSection === item.id
-                    ? "text-gray-900 font-medium bg-gray-200"
-                    : "text-gray-700 hover:text-gray-900"
-                }`}
+                onClick={() => {
+                  scrollToSection("contact");
+                  setMobileMenuOpen(false);
+                }}
+                className="block w-full text-left py-3 px-4 mt-4 bg-gray-900 text-white rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors duration-200"
               >
-                {item.label}
+                Let's Talk.
               </button>
-            ))}
+            </div>
           </div>
         )}
       </div>
