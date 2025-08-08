@@ -8,9 +8,10 @@ const experiences = [
     tech: ["Spring Boot", "Spring Security", "JPA", "MySQL"],
   },
   {
-    title: "Microservices Architecture",
-    description: "Scalable microservices with Docker and Kubernetes.",
-    tech: ["Spring Cloud", "Docker", "Kubernetes", "Redis"],
+    title: "Frontend Development",
+    description:
+      "Responsive and dynamic user interfaces with modern frontend tools.",
+    tech: ["React", "HTML", "CSS", "Tailwind CSS", "JavaScript"],
   },
   {
     title: "Security & Auth",
