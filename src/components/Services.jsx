@@ -21,7 +21,7 @@ const experiences = [
   {
     title: "Database Design",
     description: "Efficient schema and query optimization.",
-    tech: ["MySQL", "PostgreSQL", "MongoDB", "Redis"],
+    tech: ["MySQL", "MongoDB"],
   },
 ];
 

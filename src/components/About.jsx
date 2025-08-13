@@ -23,21 +23,16 @@ const About = () => (
           </p>
           <p>When not coding, I enjoy fitness, sports, and photography. 📸</p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
-            {[
-              "Java",
-              "Spring Boot",
-              "Spring Security",
-              "MySQL",
-              "PostgreSQL",
-              "Docker",
-            ].map((skill) => (
-              <div
-                key={skill}
-                className="p-3 bg-gray-100 rounded-lg text-center font-medium text-gray-800 hover:bg-gray-200"
-              >
-                {skill}
-              </div>
-            ))}
+            {["Java", "Spring Boot", "Spring Security", "MySQL", "Docker"].map(
+              (skill) => (
+                <div
+                  key={skill}
+                  className="p-3 bg-gray-100 rounded-lg text-center font-medium text-gray-800 hover:bg-gray-200"
+                >
+                  {skill}
+                </div>
+              )
+            )}
           </div>
         </div>
       </div>
