@@ -1,5 +1,6 @@
 import React from "react";
 import { User } from "lucide-react";
+import abdelielhImg from "../assets/abdelileh.jpg";
 
 const About = () => (
   <section id="about" className="py-20 bg-white">
@@ -12,7 +13,7 @@ const About = () => (
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         <div className="relative">
           <div className="w-full h-130 bg-gradient-to-br from-orange-200 via-yellow-200 to-orange-300 rounded-3xl overflow-hidden flex items-center justify-center">
-            <img src="../src/assets/abdelileh.jpg" alt="" />
+            <img src={abdelielhImg} alt="Abdelileh" />
           </div>
         </div>
         <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
