@@ -49,13 +49,25 @@ export default function Hero() {
           <span className="block mb-2">
             <TypeAnimation
               sequence={[
-                "Crafting Scalable and",
-                1000,
-                "Crafting Scalable and Secure",
-                1000,
+                "Building Robust and",
+                700,
+                "Building Robust and Secure",
+                700,
+                "Designing High-Performance",
+                700,
+                "Designing High-Performance APIs",
+                700,
+                "Engineering Enterprise-Grade",
+                700,
+                "Engineering Enterprise-Grade Backends",
+                700,
+                "Developing Resilient and",
+                700,
+                "Developing Resilient and Scalable Systems",
+                700,
               ]}
               wrapper="span"
-              speed={50}
+              speed={45}
               style={{ display: "inline-block" }}
               repeat={Infinity}
             />
