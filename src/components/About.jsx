@@ -18,7 +18,7 @@ const About = () => (
         </div>
         <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
           <p>
-            I am a Computer Science Student and backend developer, specializing
+            I am a Computer Science student and backend developer specializing
             in Java Spring Boot. I build robust, scalable, and secure backend
             systems.
           </p>
