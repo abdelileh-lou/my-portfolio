@@ -13,8 +13,16 @@ export default function Hero({ scrollToSection }) {
           &amp; Deep Learning{" "}
           <span className="accent italic-serif">
             <TypeAnimation
-              sequence={["Engineer", 1800, "Researcher", 1800, "Builder", 1800]}
-              speed={55}
+              sequence={[
+                "Engineer",
+                3200,
+                "Researcher",
+                3200,
+                "Builder",
+                3200,
+              ]}
+              speed={38}
+              deletionSpeed={24}
               repeat={Infinity}
               wrapper="span"
             />
