@@ -1,0 +1,12 @@
+<svg width="800" height="420" viewBox="0 0 800 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="420" rx="28" fill="#172554"/>
+  <circle cx="670" cy="350" r="190" fill="#F97316" fill-opacity=".18"/>
+  <circle cx="115" cy="65" r="130" fill="#EC4899" fill-opacity=".16"/>
+  <rect x="92" y="153" width="510" height="106" rx="22" fill="#F8FAFC" fill-opacity=".96"/>
+  <path d="M144 205H408" stroke="#64748B" stroke-width="12" stroke-linecap="round"/>
+  <path d="M144 236H330" stroke="#CBD5E1" stroke-width="10" stroke-linecap="round"/>
+  <path d="M630 168L666 204L630 240" stroke="#FB923C" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M694 168L730 204L694 240" stroke="#F472B6" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="92" y="80" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="26" font-weight="700">DARIJA NLP</text>
+  <text x="92" y="116" fill="#BFDBFE" font-family="Arial, sans-serif" font-size="16">SARCASM • TEXT CLASSIFICATION • DEEP LEARNING</text>
+</svg>

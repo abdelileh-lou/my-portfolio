@@ -1,64 +1,29 @@
 import React from "react";
 
-const experiences = [
-  {
-    title: "Backend API Development",
-    description:
-      "RESTful APIs with Spring Boot, security, and database integration.",
-    tech: ["Spring Boot", "Spring Security", "JPA", "MySQL"],
-  },
-  {
-    title: "Frontend Development",
-    description:
-      "Responsive and dynamic user interfaces with modern frontend tools.",
-    tech: ["React", "HTML", "CSS", "Tailwind CSS", "JavaScript"],
-  },
-  {
-    title: "Security & Auth",
-    description: "JWT, OAuth2, role-based access, and LDAP integrations.",
-    tech: ["Spring Security", "JWT", "OAuth2", "LDAP"],
-  },
-  {
-    title: "Database Design",
-    description: "Efficient schema and query optimization.",
-    tech: ["MySQL", "MongoDB"],
-  },
+const services = [
+  ["01", "Machine Learning", "End-to-end workflows, feature engineering, model selection, and evaluation.", ["Python", "Scikit-learn", "Pandas"]],
+  ["02", "Deep Learning & NLP", "Practical models for text, image, and language understanding.", ["PyTorch", "TensorFlow", "Transformers"]],
+  ["03", "Cloud & AI Deployment", "Scalable environments for deploying and serving AI-powered applications.", ["AWS", "Docker", "APIs"]],
 ];
 
 const Services = () => (
-  <section id="experience" className="py-20 bg-stone-50">
-    <div className="max-w-7xl mx-auto px-6 lg:px-8">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-          What I Do
-        </h2>
-        <p className="text-lg text-gray-600">
-          Backend development services I offer
-        </p>
+  <section id="services" className="editorial-section">
+    <div className="section-heading">
+      <div>
+        <div className="section-kicker">/03 Services</div>
+        <h2>What I do — <span className="accent italic-serif">and how it lands.</span></h2>
       </div>
-      <div className="grid md:grid-cols-2 gap-8">
-        {experiences.map((exp, i) => (
-          <div
-            key={i}
-            className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md border border-gray-100"
-          >
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              {exp.title}
-            </h3>
-            <p className="text-gray-600 mb-4">{exp.description}</p>
-            <div className="flex flex-wrap gap-3">
-              {exp.tech.map((t, idx) => (
-                <span
-                  key={idx}
-                  className="px-4 py-2 bg-gray-900 text-white rounded-full text-sm font-medium"
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
+      <p>Focused work across intelligent systems, data, and cloud infrastructure.</p>
+    </div>
+    <div className="services-grid">
+      {services.map(([number, title, description, tech]) => (
+        <article className="service-card" key={number}>
+          <div className="service-number">S/{number}</div>
+          <h3>{title}</h3>
+          <p>{description}</p>
+          <div className="service-tech">{tech.map((item) => <span key={item}>{item}</span>)}</div>
+        </article>
+      ))}
     </div>
   </section>
 );

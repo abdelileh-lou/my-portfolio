@@ -1,0 +1,12 @@
+<svg width="800" height="420" viewBox="0 0 800 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="420" rx="28" fill="#111827"/>
+  <circle cx="640" cy="80" r="140" fill="#7C3AED" fill-opacity=".22"/>
+  <circle cx="120" cy="360" r="180" fill="#06B6D4" fill-opacity=".16"/>
+  <path d="M92 276C138 213 169 263 209 185C248 109 294 203 338 130C379 63 427 181 474 112C509 61 537 99 568 76" stroke="#A78BFA" stroke-width="8" stroke-linecap="round"/>
+  <path d="M92 310C141 295 171 326 212 264C257 196 292 289 340 234C390 176 427 253 474 200C516 153 542 187 568 161" stroke="#22D3EE" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 14"/>
+  <g fill="#F9FAFB">
+    <circle cx="92" cy="276" r="9"/><circle cx="209" cy="185" r="9"/><circle cx="338" cy="130" r="9"/><circle cx="474" cy="112" r="9"/><circle cx="568" cy="76" r="9"/>
+  </g>
+  <text x="92" y="80" fill="#F9FAFB" font-family="Arial, sans-serif" font-size="26" font-weight="700">GENE EXPRESSION</text>
+  <text x="92" y="116" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="16">FEATURE SELECTION • CLASSIFICATION</text>
+</svg>

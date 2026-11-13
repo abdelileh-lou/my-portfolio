@@ -1,0 +1,11 @@
+<svg width="800" height="420" viewBox="0 0 800 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="420" rx="28" fill="#052E2B"/>
+  <circle cx="650" cy="65" r="150" fill="#14B8A6" fill-opacity=".16"/>
+  <circle cx="125" cy="360" r="160" fill="#F59E0B" fill-opacity=".12"/>
+  <path d="M151 270C222 196 287 245 340 165C397 79 447 208 513 145C555 105 604 127 660 89" stroke="#5EEAD4" stroke-width="3" stroke-dasharray="8 12"/>
+  <g fill="#FBBF24"><circle cx="184" cy="250" r="15"/><circle cx="248" cy="203" r="15"/><circle cx="300" cy="278" r="15"/><circle cx="370" cy="180" r="15"/></g>
+  <g fill="#2DD4BF"><circle cx="475" cy="218" r="15"/><circle cx="535" cy="160" r="15"/><circle cx="590" cy="222" r="15"/><circle cx="650" cy="120" r="15"/></g>
+  <g fill="#FB7185"><circle cx="260" cy="335" r="15"/><circle cx="345" cy="318" r="15"/><circle cx="430" cy="350" r="15"/></g>
+  <text x="92" y="80" fill="#ECFDF5" font-family="Arial, sans-serif" font-size="26" font-weight="700">BALANCED CLUSTERING</text>
+  <text x="92" y="116" fill="#99F6E4" font-family="Arial, sans-serif" font-size="16">GENETIC ALGORITHM • K-MEANS • OPTIMIZATION</text>
+</svg>

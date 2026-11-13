@@ -1,40 +1,33 @@
 import React from "react";
-import { User } from "lucide-react";
 import abdelielhImg from "../assets/abdelileh.jpg";
 
+const skills = ["Machine Learning", "Deep Learning", "Python", "AWS", "NLP", "Data Science"];
+
 const About = () => (
-  <section id="about" className="py-20 bg-white">
-    <div className="max-w-7xl mx-auto px-6 lg:px-8">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-700 uppercase tracking-wider">
-          About Me
-        </h2>
+  <section id="about" className="editorial-section">
+    <div className="section-heading">
+      <div>
+        <div className="section-kicker">/02 About</div>
+        <h2>Some notes on <span className="accent italic-serif">who I am.</span></h2>
       </div>
-      <div className="grid lg:grid-cols-2 gap-16 items-center">
-        <div className="relative">
-          <div className="w-full h-130 bg-gradient-to-br from-orange-200 via-yellow-200 to-orange-300 rounded-3xl overflow-hidden flex items-center justify-center">
-            <img src={abdelielhImg} alt="Abdelileh" />
-          </div>
-        </div>
-        <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
-          <p>
-            I am a Computer Science student and backend developer specializing
-            in Java Spring Boot. I build robust, scalable, and secure backend
-            systems.
-          </p>
-          <p>When not coding, I enjoy fitness, sports, and photography. 📸</p>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
-            {["Java", "Spring Boot", "Spring Security", "MySQL", "Docker"].map(
-              (skill) => (
-                <div
-                  key={skill}
-                  className="p-3 bg-gray-100 rounded-lg text-center font-medium text-gray-800 hover:bg-gray-200"
-                >
-                  {skill}
-                </div>
-              )
-            )}
-          </div>
+      <p>Data Science · Artificial Intelligence · Constantine, Algeria</p>
+    </div>
+    <div className="about-layout">
+      <div className="portrait-frame">
+        <img src={abdelielhImg} alt="Abdelileh Louhichi" />
+      </div>
+      <div className="about-copy">
+        <p>
+          I am a Master&apos;s student in Data Science and Artificial
+          Intelligence, passionate about Machine Learning and Deep Learning.
+        </p>
+        <p>
+          I enjoy exploring AI technologies, developing intelligent solutions,
+          and turning data into meaningful insights through practical projects.
+          I am also interested in Cloud Computing and AWS.
+        </p>
+        <div className="skills">
+          {skills.map((skill) => <span className="skill-pill" key={skill}>{skill}</span>)}
         </div>
       </div>
     </div>
